@@ -129,15 +129,4 @@ we use **2** 3090 gpus for training
 	bash scripts/rpe/yfcc_spp_ecfm.sh
 	
 	```
-	You should get the following results
-	```
-	 
-	Evaluation Results of weights/CFM_spp.pth (mean over 4000 pairs):  
-	AUC@5  AUC@10  	AUC@20  	
-	42.96  62.55  	77.66
 
- 	Evaluation Results of weights/ECFM_spp.pth (mean over 4000 pairs):
- 	AUC@5	AUC@10	AUC@20	
- 	41.94	61.71	76.99	  
- 	
- 	```
