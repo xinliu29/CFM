@@ -1,0 +1,15 @@
+reader:
+  name: standard
+  rawdata_dir: megadepth1500/images
+  dataset_dir: test_mffm/megadepth1500/megadepth1500_sp_2000.hdf5
+  num_kpt: 2000
+
+matcher:
+  layer_num: 9
+
+evaluator:
+  name: AUC
+  rescale: 1600
+  num_pair: 4000
+  inlier_th: 0.005
+  error_th: 1

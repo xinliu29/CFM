@@ -1,0 +1,15 @@
+reader:
+  name: standard
+  rawdata_dir: scannet_eval_release
+  dataset_dir: test_mffm/scannet/scannet_sp_1000.hdf5
+  num_kpt: 1000
+
+matcher:
+  layer_num: 9
+
+evaluator:
+  name: AUC
+  rescale: 640
+  num_pair: 1500
+  inlier_th: 0.005
+  error_th: 3

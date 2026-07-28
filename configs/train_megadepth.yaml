@@ -1,0 +1,37 @@
+name: MFFM
+gpu:
+  - 0
+  - 1
+keypoint_th: 0.005
+net:
+  match_th: 0.2
+  layers: 9
+  ac_fn: relu
+  norm_fn: in
+  filter:
+    net_channels: 128
+    obj_geod_th: 0.0001
+    obj_num_kp: 1024
+    iter_num: 1
+    use_desc: true
+
+dataset: megadepth
+scene_list_fn: assets/megadepth_train_scenes.txt
+scene_list_fn_validation: assets/megadepth_test_scenes.txt
+pairs_per_scene: 80
+image_size: 768
+max_keypoints: 1024
+min_inliers: 32
+max_inliers: 512
+random_inliers: true
+
+batch_size: 16
+workers: 16
+epochs: 650
+optim: adam
+lr: 0.0001
+min_lr: 0.000001
+weight_decay: 0.0005
+decay_rate: 0.999992
+decay_iter: 200000
+log_intervals: 50

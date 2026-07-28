@@ -1,0 +1,14 @@
+*.out
+exp*.txt
+results*.txt
+*.ckpt
+*.pth
+*.npz
+.idea
+*.tar.gz
+__pycache__
+KLM/__pycache__
+CLM/__pycache__
+dataset/__pycache__
+weights/*
+.DS_Store
